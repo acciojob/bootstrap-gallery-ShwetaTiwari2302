@@ -1,15 +1,130 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        /* Custom styling for cards */
+        .card {
+            border-radius: 10px;
+        }
+
+        .card-body h6, .card-body p {
+            text-align: center;
+        }
+
+        .card img {
+            cursor: pointer;
+            border-radius: 10px 10px 0 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="container mt-5">
+        <!-- Gallery Header -->
+        <h2>Cards Gallery</h2>
+
+        <!-- Row with Cards -->
+        <div class="row mt-4">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="image1.jpg" data-lightbox="gallery" data-title="Card 1">
+                        <img src="image1.jpg" class="card-img-top img-fluid" alt="Image 1">
+                    </a>
+                    <div class="card-body">
+                        <h6>Image 1</h6>
+                        <p>Description for Image 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="image2.jpg" data-lightbox="gallery" data-title="Card 2">
+                        <img src="image2.jpg" class="card-img-top img-fluid" alt="Image 2">
+                    </a>
+                    <div class="card-body">
+                        <h6>Image 2</h6>
+                        <p>Description for Image 2.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="image3.jpg" data-lightbox="gallery" data-title="Card 3">
+                        <img src="image3.jpg" class="card-img-top img-fluid" alt="Image 3">
+                    </a>
+                    <div class="card-body">
+                        <h6>Image 3</h6>
+                        <p>Description for Image 3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="image4.jpg" data-lightbox="gallery" data-title="Card 4">
+                        <img src="image4.jpg" class="card-img-top img-fluid" alt="Image 4">
+                    </a>
+                    <div class="card-body">
+                        <h6>Image 4</h6>
+                        <p>Description for Image 4.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="image5.jpg" data-lightbox="gallery" data-title="Card 5">
+                        <img src="image5.jpg" class="card-img-top img-fluid" alt="Image 5">
+                    </a>
+                    <div class="card-body">
+                        <h6>Image 5</h6>
+                        <p>Description for Image 5.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="image6.jpg" data-lightbox="gallery" data-title="Card 6">
+                        <img src="image6.jpg" class="card-img-top img-fluid" alt="Image 6">
+                    </a>
+                    <div class="card-body">
+                        <h6>Image 6</h6>
+                        <p>Description for Image 6.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 </body>
 
